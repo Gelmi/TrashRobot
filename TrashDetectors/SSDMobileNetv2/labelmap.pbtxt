@@ -1,0 +1,256 @@
+item {
+  id: 1
+  name: "Aerosol"
+}
+item {
+  id: 2
+  name: "Aluminium foil"
+}
+item {
+  id: 3
+  name: "Battery"
+}
+item {
+  id: 4
+  name: "Aluminium blister pack"
+}
+item {
+  id: 5
+  name: "Carded blister pack"
+}
+item {
+  id: 6
+  name: "Clear plastic bottle"
+}
+item {
+  id: 7
+  name: "Glass bottle"
+}
+item {
+  id: 8
+  name: "Other plastic bottle"
+}
+item {
+  id: 9
+  name: "Plastic bottle cap"
+}
+item {
+  id: 10
+  name: "Metal bottle cap"
+}
+item {
+  id: 11
+  name: "Broken glass"
+}
+item {
+  id: 12
+  name: "Drink can"
+}
+item {
+  id: 13
+  name: "Food Can"
+}
+item {
+  id: 14
+  name: "Corrugated carton"
+}
+item {
+  id: 15
+  name: "Drink carton"
+}
+item {
+  id: 16
+  name: "Egg carton"
+}
+item {
+  id: 17
+  name: "Meal carton"
+}
+item {
+  id: 18
+  name: "Other carton"
+}
+item {
+  id: 19
+  name: "Paper cup"
+}
+item {
+  id: 20
+  name: "Disposable plastic cup"
+}
+item {
+  id: 21
+  name: "Foam cup"
+}
+item {
+  id: 22
+  name: "Glass cup"
+}
+item {
+  id: 23
+  name: "Other plastic cup"
+}
+item {
+  id: 24
+  name: "Food waste"
+}
+item {
+  id: 25
+  name: "Plastic lid"
+}
+item {
+  id: 26
+  name: "Metal lid"
+}
+item {
+  id: 27
+  name: "Magazine paper"
+}
+item {
+  id: 28
+  name: "Tissues"
+}
+item {
+  id: 29
+  name: "Wrapping paper"
+}
+item {
+  id: 30
+  name: "Normal paper"
+}
+item {
+  id: 31
+  name: "Paper bag"
+}
+item {
+  id: 32
+  name: "Plastified paper bag"
+}
+item {
+  id: 33
+  name: "Pizza box"
+}
+item {
+  id: 34
+  name: "Garbage bag"
+}
+item {
+  id: 35
+  name: "Single-use carrier bag"
+}
+item {
+  id: 36
+  name: "Polypropylene bag"
+}
+item {
+  id: 37
+  name: "Produce bag"
+}
+item {
+  id: 38
+  name: "Cereal bag"
+}
+item {
+  id: 39
+  name: "Bread bag"
+}
+item {
+  id: 40
+  name: "Plastic film"
+}
+item {
+  id: 41
+  name: "Crisp packet"
+}
+item {
+  id: 42
+  name: "Other plastic wrapper"
+}
+item {
+  id: 43
+  name: "Retort pouch"
+}
+item {
+  id: 44
+  name: "Spread tub"
+}
+item {
+  id: 45
+  name: "Tupperware"
+}
+item {
+  id: 46
+  name: "Disposable food container"
+}
+item {
+  id: 47
+  name: "Foam food container"
+}
+item {
+  id: 48
+  name: "Other plastic container"
+}
+item {
+  id: 49
+  name: "Plastic glooves"
+}
+item {
+  id: 50
+  name: "Plastic utensils"
+}
+item {
+  id: 51
+  name: "Pop tab"
+}
+item {
+  id: 52
+  name: "Rope & strings"
+}
+item {
+  id: 53
+  name: "Scrap metal"
+}
+item {
+  id: 54
+  name: "Shoe"
+}
+item {
+  id: 55
+  name: "Six pack rings"
+}
+item {
+  id: 56
+  name: "Squeezable tube"
+}
+item {
+  id: 57
+  name: "Plastic straw"
+}
+item {
+  id: 58
+  name: "Paper straw"
+}
+item {
+  id: 59
+  name: "Styrofoam piece"
+}
+item {
+  id: 60
+  name: "Toilet tube"
+}
+item {
+  id: 61
+  name: "Unlabeled litter"
+}
+item {
+  id: 62
+  name: "Glass jar"
+}
+item {
+  id: 63
+  name: "Other plastic"
+}
+item {
+  id: 64
+  name: "Cigarette"
+}
