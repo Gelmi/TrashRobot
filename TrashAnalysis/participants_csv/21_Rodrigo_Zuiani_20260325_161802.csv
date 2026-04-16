@@ -1,0 +1,18 @@
+# id=21,name=Rodrigo Zuiani,gender=Male
+item_name,difficulty,ground_truth,suggestion,classification,time_arm,time_speaker,result
+Plasticized_Paper_Cup,hard,waste,True,no_justification,5.2406,7.3501,recycle
+Foam,hard,waste,True,no_justification,0.5785,3.4054,waste
+Paper_Sheet,easy,recycle,False,no_justification,1.4756,3.6538,recycle
+Plastic_Bag,hard,recycle,True,no_justification,0.3980,3.4322,recycle
+Cardboard_Box,easy,recycle,False,no_justification,2.1201,5.2843,recycle
+Paper_Towel,easy,waste,True,no_justification,1.4912,3.6024,waste
+Waxed_Cardboard,hard,waste,True,no_justification,2.0781,4.2896,recycle
+Used_Tissue,easy,waste,True,no_justification,0.0000,1.9780,waste
+Broken_Ceramic,easy,waste,True,justification,3.1052,2.0107,waste
+Blister_Pack,hard,recycle,False,justification,2.2296,1.3051,waste
+Surgical_Mask,easy,waste,True,justification,2.8308,1.5419,waste
+Black_Plastic,hard,waste,False,justification,3.3716,1.9244,recycle
+Tetra_Pak,hard,recycle,True,justification,2.5527,2.1487,recycle
+Metal_Can,easy,recycle,True,justification,3.3009,2.6071,recycle
+Bubble_Wrap,hard,recycle,True,justification,2.6312,1.4028,recycle
+Plastic_Bottle,easy,recycle,True,justification,6.5656,2.8407,recycle

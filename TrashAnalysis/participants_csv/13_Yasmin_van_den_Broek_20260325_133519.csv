@@ -1,0 +1,18 @@
+# id=13,name=Yasmin van den Broek,gender=Female
+item_name,difficulty,ground_truth,suggestion,classification,time_arm,time_speaker,result
+Surgical_Mask,easy,waste,True,no_justification,2.1001,4.0611,waste
+Broken_Ceramic,easy,waste,True,no_justification,0.7365,2.9720,waste
+Tetra_Pak,hard,recycle,True,no_justification,0.0000,1.9957,recycle
+Plasticized_Paper_Cup,hard,waste,True,no_justification,4.1941,6.0398,recycle
+Blister_Pack,hard,recycle,True,no_justification,0.1127,2.2548,recycle
+Used_Tissue,easy,waste,False,no_justification,1.2142,3.3291,waste
+Cardboard_Box,easy,recycle,False,no_justification,0.0000,2.2851,waste
+Foam,hard,waste,True,no_justification,17.3339,1.8234,waste
+Black_Plastic,hard,waste,False,justification,1.0331,0.0000,recycle
+Paper_Towel,easy,waste,True,justification,0.0000,16.3670,waste
+Metal_Can,easy,recycle,True,justification,12.9738,11.8281,recycle
+Bubble_Wrap,hard,recycle,True,justification,0.6415,16.9313,recycle
+Plastic_Bag,hard,recycle,True,justification,0.4975,15.6693,recycle
+Paper_Sheet,easy,recycle,False,justification,1.5565,1.8046,waste
+Waxed_Cardboard,hard,waste,True,justification,1.3014,1.0005,waste
+Plastic_Bottle,easy,recycle,True,justification,0.0000,0.0000,recycle

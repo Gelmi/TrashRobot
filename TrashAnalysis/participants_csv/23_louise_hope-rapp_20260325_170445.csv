@@ -1,0 +1,18 @@
+# id=23,name=louise hope-rapp,gender=Female
+item_name,difficulty,ground_truth,suggestion,classification,time_arm,time_speaker,result
+Plastic_Bottle,easy,recycle,True,no_justification,39.3125,1.4923,recycle
+Paper_Towel,easy,waste,True,no_justification,5.5027,7.5306,recycle
+Broken_Ceramic,easy,waste,True,no_justification,0.0000,2.4403,waste
+Cardboard_Box,easy,recycle,True,no_justification,18.0062,2.0800,recycle
+Tetra_Pak,hard,recycle,False,no_justification,9.6654,12.2073,recycle
+Plasticized_Paper_Cup,hard,waste,True,no_justification,0.0502,2.2381,recycle
+Bubble_Wrap,hard,recycle,True,no_justification,0.0000,1.8631,recycle
+Foam,hard,waste,False,no_justification,1.6196,3.9628,recycle
+Plastic_Bag,hard,recycle,False,justification,7.9805,7.3400,waste
+Black_Plastic,hard,waste,False,justification,4.4821,3.0735,recycle
+Blister_Pack,hard,recycle,True,justification,3.4644,2.8127,recycle
+Metal_Can,easy,recycle,True,justification,5.2430,0.0367,recycle
+Surgical_Mask,easy,waste,True,justification,3.9656,2.4866,waste
+Used_Tissue,easy,waste,True,justification,2.6921,1.6641,waste
+Waxed_Cardboard,hard,waste,True,justification,12.1871,11.8591,waste
+Paper_Sheet,easy,recycle,True,justification,1.7256,1.1884,recycle

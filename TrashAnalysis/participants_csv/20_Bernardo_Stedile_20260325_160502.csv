@@ -1,0 +1,18 @@
+# id=20,name=Bernardo Stedile,gender=Male
+item_name,difficulty,ground_truth,suggestion,classification,time_arm,time_speaker,result
+Plasticized_Paper_Cup,hard,waste,False,justification,1.0169,0.2742,recycle
+Tetra_Pak,hard,recycle,True,justification,0.0000,0.0470,recycle
+Used_Tissue,easy,waste,True,justification,0.2260,0.0000,waste
+Cardboard_Box,easy,recycle,True,justification,0.0000,15.0330,recycle
+Blister_Pack,hard,recycle,False,justification,3.0047,2.2635,waste
+Waxed_Cardboard,hard,waste,True,justification,0.9752,1.2996,waste
+Paper_Sheet,easy,recycle,True,justification,0.8531,0.0000,recycle
+Plastic_Bottle,easy,recycle,True,justification,0.0000,0.0005,recycle
+Foam,hard,waste,True,no_justification,187.9925,2.0451,waste
+Plastic_Bag,hard,recycle,True,no_justification,15.0354,1.1285,recycle
+Broken_Ceramic,easy,waste,True,no_justification,16.2465,1.9339,waste
+Bubble_Wrap,hard,recycle,True,no_justification,15.5931,0.8104,recycle
+Black_Plastic,hard,waste,False,no_justification,15.1547,0.8026,recycle
+Surgical_Mask,easy,waste,True,no_justification,14.9406,1.3428,waste
+Paper_Towel,easy,waste,False,no_justification,16.3577,1.8959,recycle
+Metal_Can,easy,recycle,True,no_justification,15.0923,1.4521,recycle

@@ -1,0 +1,18 @@
+# id=11,name=Henrique Gundlach,gender=Male
+item_name,difficulty,ground_truth,suggestion,classification,time_arm,time_speaker,result
+Black_Plastic,hard,waste,True,justification,7.3557,6.9324,waste
+Paper_Sheet,easy,recycle,True,justification,1.5317,0.5796,recycle
+Surgical_Mask,easy,waste,False,justification,2.8381,3.2470,waste
+Tetra_Pak,hard,recycle,True,justification,6.0091,0.8016,recycle
+Bubble_Wrap,hard,recycle,True,justification,1.7960,1.6134,recycle
+Paper_Towel,easy,waste,True,justification,0.0000,0.0000,waste
+Broken_Ceramic,easy,waste,True,justification,0.6396,14.0066,waste
+Plasticized_Paper_Cup,hard,waste,False,justification,0.9988,0.1499,recycle
+Used_Tissue,easy,waste,True,no_justification,0.0604,3.1901,waste
+Blister_Pack,hard,recycle,True,no_justification,0.0000,1.7977,recycle
+Plastic_Bottle,easy,recycle,True,no_justification,13.1495,0.7654,recycle
+Cardboard_Box,easy,recycle,True,no_justification,15.1962,1.2793,recycle
+Plastic_Bag,hard,recycle,True,no_justification,16.0301,2.0327,recycle
+Foam,hard,waste,False,no_justification,14.1884,2.3444,recycle
+Metal_Can,easy,recycle,False,no_justification,0.9764,3.1029,recycle
+Waxed_Cardboard,hard,waste,True,no_justification,1.6305,3.7949,waste

@@ -1,0 +1,18 @@
+# id=17,name=Ewen Le Hay,gender=Male
+item_name,difficulty,ground_truth,suggestion,classification,time_arm,time_speaker,result
+Paper_Sheet,easy,recycle,True,no_justification,109.2973,2.7110,recycle
+Surgical_Mask,easy,waste,True,no_justification,17.9987,2.1017,waste
+Metal_Can,easy,recycle,True,no_justification,16.1992,1.4812,recycle
+Bubble_Wrap,hard,recycle,True,no_justification,17.0134,1.7828,recycle
+Plasticized_Paper_Cup,hard,waste,False,no_justification,15.9254,1.4952,recycle
+Blister_Pack,hard,recycle,True,no_justification,20.4615,1.7101,recycle
+Used_Tissue,easy,waste,False,no_justification,5.2843,7.6563,waste
+Black_Plastic,hard,waste,True,no_justification,0.0000,0.7591,waste
+Tetra_Pak,hard,recycle,False,justification,3.6269,2.2476,recycle
+Foam,hard,waste,False,justification,0.0000,0.0000,recycle
+Plastic_Bottle,easy,recycle,True,justification,15.8152,14.6655,recycle
+Plastic_Bag,hard,recycle,True,justification,14.3076,14.7211,recycle
+Broken_Ceramic,easy,waste,True,justification,18.1188,17.0349,waste
+Cardboard_Box,easy,recycle,True,justification,13.8454,12.4715,recycle
+Paper_Towel,easy,waste,True,justification,0.5054,16.9832,waste
+Waxed_Cardboard,hard,waste,True,justification,1.8267,1.6177,recycle

@@ -1,0 +1,18 @@
+# id=6,name=Luca Carvalho,gender=Male
+item_name,difficulty,ground_truth,suggestion,classification,time_arm,time_speaker,result
+Metal_Can,easy,recycle,True,justification,2.0104,1.4949,recycle
+Tetra_Pak,hard,recycle,True,justification,1.5292,1.5113,recycle
+Plastic_Bag,hard,recycle,True,justification,2.0678,1.6335,recycle
+Blister_Pack,hard,recycle,True,justification,1.7554,0.6827,recycle
+Broken_Ceramic,easy,waste,True,justification,2.5314,1.3430,waste
+Waxed_Cardboard,hard,waste,True,justification,9.3227,9.1793,recycle
+Used_Tissue,easy,waste,False,justification,8.1333,7.4765,waste
+Surgical_Mask,easy,waste,False,justification,14.6162,13.9232,recycle
+Plasticized_Paper_Cup,hard,waste,True,no_justification,10.0019,12.0513,recycle
+Black_Plastic,hard,waste,True,no_justification,12.3125,14.3328,recycle
+Cardboard_Box,easy,recycle,True,no_justification,0.0000,1.6097,recycle
+Bubble_Wrap,hard,recycle,False,no_justification,7.7258,10.7264,recycle
+Paper_Towel,easy,waste,True,no_justification,11.9213,14.0535,recycle
+Foam,hard,waste,True,no_justification,0.9141,3.9197,waste
+Paper_Sheet,easy,recycle,True,no_justification,0.0000,1.5129,recycle
+Plastic_Bottle,easy,recycle,False,no_justification,13.7570,4.9211,recycle

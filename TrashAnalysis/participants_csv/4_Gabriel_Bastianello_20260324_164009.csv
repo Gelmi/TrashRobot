@@ -1,0 +1,18 @@
+# id=4,name=Gabriel Bastianello,gender=Male
+item_name,difficulty,ground_truth,suggestion,classification,time_arm,time_speaker,result
+Foam,hard,waste,True,no_justification,0.7986,2.8335,waste
+Blister_Pack,hard,recycle,False,no_justification,0.0000,1.3964,waste
+Plasticized_Paper_Cup,hard,waste,True,no_justification,2.4545,4.7982,recycle
+Metal_Can,easy,recycle,True,no_justification,17.1609,19.5032,recycle
+Plastic_Bottle,easy,recycle,False,no_justification,4.3995,6.5897,recycle
+Black_Plastic,hard,waste,True,no_justification,25.1736,27.7445,recycle
+Surgical_Mask,easy,waste,True,no_justification,0.1752,2.2875,waste
+Used_Tissue,easy,waste,True,no_justification,0.0000,2.3600,recycle
+Tetra_Pak,hard,recycle,True,justification,0.3753,0.0000,recycle
+Bubble_Wrap,hard,recycle,False,justification,2.3556,1.6382,waste
+Broken_Ceramic,easy,waste,True,justification,0.7388,0.0000,waste
+Paper_Sheet,easy,recycle,True,justification,0.0000,15.9526,recycle
+Cardboard_Box,easy,recycle,True,justification,15.1973,14.1884,recycle
+Waxed_Cardboard,hard,waste,False,justification,1.3162,1.5442,recycle
+Paper_Towel,easy,waste,True,justification,2.6478,1.3970,waste
+Plastic_Bag,hard,recycle,True,justification,0.0359,0.0000,recycle

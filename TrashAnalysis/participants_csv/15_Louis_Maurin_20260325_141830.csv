@@ -1,0 +1,18 @@
+# id=15,name=Louis Maurin,gender=Male
+item_name,difficulty,ground_truth,suggestion,classification,time_arm,time_speaker,result
+Black_Plastic,hard,waste,True,justification,5.0862,4.6013,waste
+Cardboard_Box,easy,recycle,True,justification,2.6284,3.0866,recycle
+Paper_Towel,easy,waste,True,justification,6.9492,6.8104,recycle
+Foam,hard,waste,True,justification,0.6400,0.0000,waste
+Plastic_Bag,hard,recycle,True,justification,1.7926,1.6030,recycle
+Paper_Sheet,easy,recycle,False,justification,5.9086,5.4494,recycle
+Waxed_Cardboard,hard,waste,False,justification,2.9881,2.2768,waste
+Broken_Ceramic,easy,waste,True,justification,0.5927,0.0000,waste
+Bubble_Wrap,hard,recycle,True,no_justification,1.1869,3.4880,recycle
+Plasticized_Paper_Cup,hard,waste,True,no_justification,1.6406,4.7520,recycle
+Surgical_Mask,easy,waste,True,no_justification,1.3002,3.3651,waste
+Used_Tissue,easy,waste,True,no_justification,0.0000,1.4692,waste
+Plastic_Bottle,easy,recycle,True,no_justification,15.0954,2.1751,recycle
+Blister_Pack,hard,recycle,False,no_justification,1.6446,4.5308,recycle
+Tetra_Pak,hard,recycle,False,no_justification,1.6673,3.7304,recycle
+Metal_Can,easy,recycle,True,no_justification,0.2220,2.6684,recycle

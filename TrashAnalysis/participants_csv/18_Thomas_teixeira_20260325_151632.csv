@@ -1,0 +1,18 @@
+# id=18,name=Thomas teixeira,gender=Male
+item_name,difficulty,ground_truth,suggestion,classification,time_arm,time_speaker,result
+Cardboard_Box,easy,recycle,True,justification,2.7718,2.9101,recycle
+Bubble_Wrap,hard,recycle,True,justification,2.4606,1.2897,recycle
+Paper_Towel,easy,waste,True,justification,1.1409,1.0167,waste
+Tetra_Pak,hard,recycle,False,justification,3.4307,1.4307,waste
+Plastic_Bottle,easy,recycle,True,justification,0.0000,0.0000,recycle
+Plasticized_Paper_Cup,hard,waste,True,justification,1.1342,0.3594,waste
+Metal_Can,easy,recycle,False,justification,0.4064,0.0000,waste
+Foam,hard,waste,True,justification,0.0000,15.4819,waste
+Surgical_Mask,easy,waste,True,no_justification,323.7578,1.2144,waste
+Broken_Ceramic,easy,waste,True,no_justification,12.2837,0.8117,waste
+Used_Tissue,easy,waste,True,no_justification,12.9889,1.1144,waste
+Blister_Pack,hard,recycle,True,no_justification,12.4568,0.5583,recycle
+Paper_Sheet,easy,recycle,False,no_justification,15.0139,0.7220,waste
+Plastic_Bag,hard,recycle,False,no_justification,15.5791,1.7770,waste
+Waxed_Cardboard,hard,waste,True,no_justification,17.3703,1.0701,waste
+Black_Plastic,hard,waste,True,no_justification,15.9743,1.1693,waste

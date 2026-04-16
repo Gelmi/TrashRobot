@@ -1,0 +1,18 @@
+# id=22,name=Alperen Kenan,gender=Male
+item_name,difficulty,ground_truth,suggestion,classification,time_arm,time_speaker,result
+Plastic_Bottle,easy,recycle,True,justification,0.8790,2.0697,recycle
+Cardboard_Box,easy,recycle,False,justification,3.5980,3.2421,waste
+Paper_Sheet,easy,recycle,True,justification,0.0000,0.0000,recycle
+Metal_Can,easy,recycle,True,justification,0.0535,0.3572,recycle
+Bubble_Wrap,hard,recycle,True,justification,1.9121,1.5578,recycle
+Black_Plastic,hard,waste,False,justification,0.7896,0.0000,recycle
+Waxed_Cardboard,hard,waste,True,justification,4.2079,4.0704,waste
+Plasticized_Paper_Cup,hard,waste,True,justification,1.9746,0.9576,waste
+Used_Tissue,easy,waste,False,no_justification,0.6153,3.0830,recycle
+Broken_Ceramic,easy,waste,False,no_justification,0.0000,0.6967,recycle
+Paper_Towel,easy,waste,True,no_justification,14.5613,1.0948,waste
+Foam,hard,waste,True,no_justification,16.6118,0.7767,waste
+Tetra_Pak,hard,recycle,True,no_justification,15.9201,1.7556,recycle
+Blister_Pack,hard,recycle,True,no_justification,17.9879,0.7831,recycle
+Surgical_Mask,easy,waste,True,no_justification,13.7904,0.7772,waste
+Plastic_Bag,hard,recycle,True,no_justification,13.7075,0.4674,recycle

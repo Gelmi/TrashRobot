@@ -1,0 +1,18 @@
+# id=19,name=Vitor Marques,gender=Male
+item_name,difficulty,ground_truth,suggestion,classification,time_arm,time_speaker,result
+Waxed_Cardboard,hard,waste,True,no_justification,5.4645,7.5332,recycle
+Surgical_Mask,easy,waste,False,no_justification,1.5482,4.5702,waste
+Plastic_Bag,hard,recycle,True,no_justification,1.5447,3.8545,waste
+Paper_Towel,easy,waste,True,no_justification,0.0000,1.6048,waste
+Paper_Sheet,easy,recycle,False,no_justification,3.9265,5.9510,recycle
+Tetra_Pak,hard,recycle,True,no_justification,0.0000,0.8038,recycle
+Blister_Pack,hard,recycle,True,no_justification,13.5581,0.9492,recycle
+Cardboard_Box,easy,recycle,True,no_justification,1.5036,3.7401,recycle
+Black_Plastic,hard,waste,True,justification,2.9258,1.9951,waste
+Foam,hard,waste,True,justification,2.1339,0.4610,waste
+Bubble_Wrap,hard,recycle,False,justification,2.0553,0.3065,waste
+Used_Tissue,easy,waste,False,justification,2.4601,1.9447,recycle
+Plastic_Bottle,easy,recycle,True,justification,3.5934,3.6906,recycle
+Plasticized_Paper_Cup,hard,waste,True,justification,6.5011,6.1399,recycle
+Broken_Ceramic,easy,waste,True,justification,1.1784,0.3083,waste
+Metal_Can,easy,recycle,True,justification,0.5676,0.0000,recycle

@@ -1,0 +1,18 @@
+# id=14,name=Ardi,gender=Male
+item_name,difficulty,ground_truth,suggestion,classification,time_arm,time_speaker,result
+Used_Tissue,easy,waste,True,no_justification,1.3994,3.6161,waste
+Tetra_Pak,hard,recycle,False,no_justification,2.6116,4.6401,recycle
+Metal_Can,easy,recycle,True,no_justification,0.0000,0.9692,recycle
+Black_Plastic,hard,waste,True,no_justification,2.2145,4.7295,recycle
+Paper_Sheet,easy,recycle,True,no_justification,0.0000,1.4447,recycle
+Bubble_Wrap,hard,recycle,True,no_justification,12.9662,1.7469,recycle
+Surgical_Mask,easy,waste,True,no_justification,13.9685,1.2151,waste
+Foam,hard,waste,False,no_justification,0.8185,3.2125,waste
+Waxed_Cardboard,hard,waste,True,justification,2.2608,2.0620,waste
+Plastic_Bag,hard,recycle,False,justification,3.8490,3.2595,waste
+Broken_Ceramic,easy,waste,True,justification,1.1904,0.3795,waste
+Blister_Pack,hard,recycle,False,justification,3.8371,2.7910,waste
+Plasticized_Paper_Cup,hard,waste,True,justification,4.3982,3.1746,recycle
+Plastic_Bottle,easy,recycle,True,justification,1.2258,1.4232,recycle
+Cardboard_Box,easy,recycle,True,justification,1.2016,0.6233,recycle
+Paper_Towel,easy,waste,True,justification,0.8802,0.8682,waste

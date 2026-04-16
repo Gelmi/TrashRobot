@@ -1,0 +1,18 @@
+# id=9,name=zhichen lu,gender=Male
+item_name,difficulty,ground_truth,suggestion,classification,time_arm,time_speaker,result
+Foam,hard,waste,True,justification,3.4471,2.0981,waste
+Paper_Towel,easy,waste,True,justification,5.5612,4.4398,recycle
+Metal_Can,easy,recycle,False,justification,9.2664,8.6305,waste
+Bubble_Wrap,hard,recycle,True,justification,0.0000,0.0000,recycle
+Used_Tissue,easy,waste,True,justification,1.6310,0.1485,recycle
+Surgical_Mask,easy,waste,True,justification,4.6790,3.1161,recycle
+Blister_Pack,hard,recycle,True,justification,0.0000,0.0000,recycle
+Plastic_Bag,hard,recycle,False,justification,11.5419,10.4349,waste
+Waxed_Cardboard,hard,waste,True,no_justification,3.3611,6.4259,recycle
+Tetra_Pak,hard,recycle,True,no_justification,0.0000,1.1848,recycle
+Paper_Sheet,easy,recycle,True,no_justification,12.3169,1.2835,recycle
+Broken_Ceramic,easy,waste,True,no_justification,17.0517,2.0267,waste
+Plasticized_Paper_Cup,hard,waste,False,no_justification,15.8041,1.6631,recycle
+Black_Plastic,hard,waste,True,no_justification,15.7828,0.7575,recycle
+Plastic_Bottle,easy,recycle,False,no_justification,14.2173,0.6720,recycle
+Cardboard_Box,easy,recycle,True,no_justification,12.6215,1.0794,recycle

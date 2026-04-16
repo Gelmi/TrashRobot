@@ -1,0 +1,18 @@
+# id=16,name=naomy biaggi,gender=Female
+item_name,difficulty,ground_truth,suggestion,classification,time_arm,time_speaker,result
+Plastic_Bottle,easy,recycle,True,justification,0.7305,1.9201,recycle
+Used_Tissue,easy,waste,True,justification,0.0000,0.0000,waste
+Black_Plastic,hard,waste,False,justification,1.0209,16.2688,recycle
+Cardboard_Box,easy,recycle,True,justification,0.0000,13.0285,recycle
+Foam,hard,waste,True,justification,2.7887,1.1933,waste
+Surgical_Mask,easy,waste,False,justification,8.1374,7.5437,waste
+Blister_Pack,hard,recycle,True,justification,1.3980,0.2372,recycle
+Waxed_Cardboard,hard,waste,True,justification,1.9909,1.7202,recycle
+Plasticized_Paper_Cup,hard,waste,True,no_justification,0.0000,2.2858,recycle
+Paper_Sheet,easy,recycle,True,no_justification,14.2746,1.1538,recycle
+Metal_Can,easy,recycle,True,no_justification,13.7913,1.9224,recycle
+Plastic_Bag,hard,recycle,False,no_justification,15.9397,2.6812,recycle
+Bubble_Wrap,hard,recycle,True,no_justification,14.7237,1.6043,recycle
+Broken_Ceramic,easy,waste,False,no_justification,13.7022,1.8072,recycle
+Paper_Towel,easy,waste,True,no_justification,15.0988,2.6033,recycle
+Tetra_Pak,hard,recycle,True,no_justification,12.0220,0.8636,recycle

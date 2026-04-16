@@ -1,0 +1,27 @@
+# Recyclable - Easy
+Plastic bottle
+Metal can
+Cardboard Box
+Paper Sheet
+Glass Bottle
+
+# Recyclable - Hard
+Tetra Pak
+Plastic Bag
+Blister Pack
+Aluminium foil
+Bubble Wrap
+
+# Non-recyclable - Easy
+Paper towel
+Used tissue
+Surgical Mask
+Food waste
+Broken ceramic
+
+# Non-recyclable - Hard
+Black plastic
+Plasticized Paper Cup
+Waxed cardboard
+Foam
+Wooden packaging

@@ -1,0 +1,18 @@
+# id=7,name=Gustavo Barreto,gender=Male
+item_name,difficulty,ground_truth,suggestion,classification,time_arm,time_speaker,result
+Foam,hard,waste,True,justification,201.4990,0.0000,waste
+Plastic_Bag,hard,recycle,True,justification,5.0494,3.5605,recycle
+Cardboard_Box,easy,recycle,True,justification,3.2733,3.2555,waste
+Tetra_Pak,hard,recycle,True,justification,0.7055,0.2030,recycle
+Waxed_Cardboard,hard,waste,True,justification,0.0000,0.3480,waste
+Metal_Can,easy,recycle,False,justification,2.1419,1.3690,recycle
+Plastic_Bottle,easy,recycle,False,justification,1.2169,0.7497,waste
+Paper_Towel,easy,waste,True,justification,0.0000,0.0000,waste
+Paper_Sheet,easy,recycle,True,no_justification,1.3335,4.6364,recycle
+Blister_Pack,hard,recycle,True,no_justification,0.4654,3.2303,waste
+Used_Tissue,easy,waste,False,no_justification,0.0000,2.6000,waste
+Broken_Ceramic,easy,waste,True,no_justification,13.7810,1.7804,waste
+Bubble_Wrap,hard,recycle,False,no_justification,1.1076,3.8595,recycle
+Plasticized_Paper_Cup,hard,waste,True,no_justification,0.7458,3.1300,waste
+Surgical_Mask,easy,waste,True,no_justification,0.0000,1.4168,waste
+Black_Plastic,hard,waste,True,no_justification,0.3688,2.5125,recycle

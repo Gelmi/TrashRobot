@@ -1,0 +1,18 @@
+# id=10,name=Lara Polachini,gender=Female
+item_name,difficulty,ground_truth,suggestion,classification,time_arm,time_speaker,result
+Foam,hard,waste,True,no_justification,0.6851,2.8008,waste
+Bubble_Wrap,hard,recycle,False,no_justification,0.8784,3.7625,waste
+Used_Tissue,easy,waste,False,no_justification,0.7395,3.0938,recycle
+Waxed_Cardboard,hard,waste,True,no_justification,0.1197,2.3392,waste
+Cardboard_Box,easy,recycle,True,no_justification,0.0000,1.3321,recycle
+Paper_Towel,easy,waste,True,no_justification,0.9473,3.0796,waste
+Tetra_Pak,hard,recycle,True,no_justification,0.0000,0.9387,recycle
+Plastic_Bottle,easy,recycle,True,no_justification,12.8995,1.0338,recycle
+Blister_Pack,hard,recycle,False,justification,0.9193,0.1201,waste
+Black_Plastic,hard,waste,False,justification,0.0000,0.0000,recycle
+Surgical_Mask,easy,waste,True,justification,12.7834,11.8423,waste
+Plasticized_Paper_Cup,hard,waste,True,justification,1.4217,0.6267,waste
+Plastic_Bag,hard,recycle,True,justification,0.0000,0.0000,recycle
+Metal_Can,easy,recycle,True,justification,14.5951,13.8445,recycle
+Paper_Sheet,easy,recycle,True,justification,0.1071,15.2821,recycle
+Broken_Ceramic,easy,waste,True,justification,0.2477,13.9398,waste

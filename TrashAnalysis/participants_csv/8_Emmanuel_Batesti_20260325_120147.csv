@@ -1,0 +1,18 @@
+# id=8,name=Emmanuel Batesti,gender=Male
+item_name,difficulty,ground_truth,suggestion,classification,time_arm,time_speaker,result
+Blister_Pack,hard,recycle,True,no_justification,0.0000,1.8303,recycle
+Tetra_Pak,hard,recycle,False,no_justification,14.7479,1.9854,recycle
+Plastic_Bottle,easy,recycle,True,no_justification,14.4465,1.3255,recycle
+Waxed_Cardboard,hard,waste,False,no_justification,14.5902,1.0298,recycle
+Paper_Towel,easy,waste,True,no_justification,13.1479,0.5257,waste
+Used_Tissue,easy,waste,True,no_justification,13.9811,0.4869,waste
+Plastic_Bag,hard,recycle,True,no_justification,13.6644,1.0975,recycle
+Paper_Sheet,easy,recycle,True,no_justification,14.1910,0.7665,recycle
+Foam,hard,waste,True,justification,1.4823,0.0000,waste
+Metal_Can,easy,recycle,True,justification,0.0000,12.9601,recycle
+Black_Plastic,hard,waste,False,justification,1.2480,0.3805,recycle
+Cardboard_Box,easy,recycle,True,justification,0.0000,0.0000,recycle
+Plasticized_Paper_Cup,hard,waste,False,justification,9.8609,9.2875,recycle
+Broken_Ceramic,easy,waste,True,justification,14.2685,13.7064,waste
+Bubble_Wrap,hard,recycle,True,justification,13.3862,12.1510,recycle
+Surgical_Mask,easy,waste,True,justification,13.2843,12.6549,waste

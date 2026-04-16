@@ -1,0 +1,18 @@
+# id=12,name=Noel JUMIN,gender=Male
+item_name,difficulty,ground_truth,suggestion,classification,time_arm,time_speaker,result
+Broken_Ceramic,easy,waste,False,justification,2.7952,1.9110,recycle
+Plastic_Bottle,easy,recycle,True,justification,0.7536,1.5884,recycle
+Metal_Can,easy,recycle,True,justification,6.3485,5.7052,recycle
+Tetra_Pak,hard,recycle,True,justification,0.0000,0.0000,recycle
+Bubble_Wrap,hard,recycle,False,justification,14.3291,13.7848,waste
+Black_Plastic,hard,waste,True,justification,2.7665,2.1727,waste
+Blister_Pack,hard,recycle,True,justification,2.7445,2.0931,waste
+Paper_Sheet,easy,recycle,True,justification,0.0000,0.0000,recycle
+Surgical_Mask,easy,waste,True,no_justification,189.1739,1.3615,waste
+Paper_Towel,easy,waste,True,no_justification,1.0828,3.2436,recycle
+Plastic_Bag,hard,recycle,False,no_justification,0.0000,0.6416,waste
+Cardboard_Box,easy,recycle,True,no_justification,14.1500,0.5930,recycle
+Plasticized_Paper_Cup,hard,waste,True,no_justification,0.8178,3.9307,recycle
+Used_Tissue,easy,waste,True,no_justification,0.0000,0.6629,waste
+Foam,hard,waste,True,no_justification,13.0127,1.0987,waste
+Waxed_Cardboard,hard,waste,False,no_justification,14.4391,1.8808,recycle

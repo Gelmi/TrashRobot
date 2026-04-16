@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RO-MAN 2026 Recycling Experiment Dashboard</title>
+<style>
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background: #f6f8fb;
+    color: #1f2937;
+  }
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 24px;
+  }
+  .hero {
+    background: linear-gradient(135deg, #17324d, #325d88);
+    color: white;
+    padding: 28px;
+    border-radius: 16px;
+    margin-bottom: 24px;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+  .card {
+    background: white;
+    border-radius: 14px;
+    padding: 18px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+  }
+  .card h3 {
+    margin-top: 0;
+    font-size: 1rem;
+  }
+  .metric {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 8px 0 4px 0;
+  }
+  .section {
+    margin: 24px 0;
+  }
+  .section h2 {
+    margin-bottom: 12px;
+  }
+  .plot {
+    background: white;
+    border-radius: 14px;
+    padding: 12px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+    margin-bottom: 16px;
+  }
+  .plot img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+  }
+  .data-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+    border-radius: 14px;
+    overflow: hidden;
+  }
+  .data-table th, .data-table td {
+    padding: 10px 12px;
+    border-bottom: 1px solid #e5e7eb;
+    text-align: left;
+    font-size: 0.95rem;
+  }
+  .data-table th {
+    background: #eaf0f6;
+    position: sticky;
+    top: 0;
+  }
+  .small {
+    color: #4b5563;
+    font-size: 0.95rem;
+  }
+  ul { line-height: 1.6; }
+</style>
+</head>
+<body>
+  <div class="container">
+    <div class="hero">
+      <h1>RO-MAN 2026 — Human-Robot Symbiosis with AI</h1>
+      <p><strong>Experiment dashboard:</strong> justification vs no-justification in an embodied-LLM recycling task.</p>
+      <p class="small">This page was generated automatically from the experiment JSON file.</p>
+    </div>
+
+    <div class="grid">
+      <div class="card"><h3>Participants</h3><div class="metric">20</div><div class="small">Within-subject design</div></div>
+      <div class="card"><h3>Trials per condition</h3><div class="metric">160</div><div class="small">160 justification / 160 no-justification</div></div>
+      <div class="card"><h3>Pooled compliance gain</h3><div class="metric">+7.5%</div><div class="small">Justification minus no-justification</div></div>
+      <div class="card"><h3>Pooled override gap</h3><div class="metric">-8.1%</div><div class="small">Justification minus no-justification</div></div>
+    </div>
+
+    <div class="section card">
+      <h2>Key takeaways</h2>
+      
+    <ul>
+      <li><strong>Sample:</strong> 20 participants, within-subject comparison of justification vs no justification.</li>
+      <li><strong>Compliance when the robot is correct:</strong> pooled rate was
+          68.1% with justification vs
+          60.6% without justification.</li>
+      <li><strong>Override when the robot is incorrect:</strong> pooled rate was
+          4.4% with justification vs
+          12.5% without justification.</li>
+      <li><strong>Memory accuracy:</strong> nearly identical across conditions
+          (87.5% vs
+          88.1%).</li>
+      <li><strong>Timing:</strong> average arm time was much lower with justification
+          (4.61s vs 12.25s),
+          while average speaker time was higher
+          (3.97s vs 3.05s).</li>
+      <li><strong>Trust decay:</strong> depending on aggregation, the pre/post pattern is mixed, so it is worth checking both participant-level means and pooled trial totals.</li>
+    </ul>
+    
+    </div>
+
+    <div class="section">
+      <h2>Figures</h2>
+      <div class="plot"><img src="fig_condition_metrics.png" alt="Condition metrics"></div>
+      <div class="plot"><img src="fig_times.png" alt="Timing metrics"></div>
+      <div class="plot"><img src="fig_paired_compliance.png" alt="Paired compliance plot"></div>
+      <div class="plot"><img src="fig_paired_override.png" alt="Paired override plot"></div>
+      <div class="plot"><img src="fig_trust_decay.png" alt="Trust decay plot"></div>
+      <div class="plot"><img src="fig_demographics.png" alt="Demographics plot"></div>
+    </div>
+
+    <div class="section">
+      <h2>Condition summary (participant-level means)</h2>
+      <table class="dataframe data-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>condition</th>
+      <th>participants</th>
+      <th>mean_age</th>
+      <th>compliance_when_correct</th>
+      <th>override_when_incorrect</th>
+      <th>memory_accuracy</th>
+      <th>avg_arm_time_s</th>
+      <th>avg_speaker_time_s</th>
+      <th>pre_error_compliance_mean</th>
+      <th>post_error_compliance_mean</th>
+      <th>trust_decay_mean</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Justification</td>
+      <td>20</td>
+      <td>24.9</td>
+      <td>0.681</td>
+      <td>0.044</td>
+      <td>0.875</td>
+      <td>4.613</td>
+      <td>3.968</td>
+      <td>0.924</td>
+      <td>0.724</td>
+      <td>0.200</td>
+    </tr>
+    <tr>
+      <td>No Justification</td>
+      <td>20</td>
+      <td>24.9</td>
+      <td>0.606</td>
+      <td>0.125</td>
+      <td>0.881</td>
+      <td>12.248</td>
+      <td>3.049</td>
+      <td>0.756</td>
+      <td>0.742</td>
+      <td>0.014</td>
+    </tr>
+  </tbody>
+</table>
+    </div>
+
+    <div class="section">
+      <h2>Condition summary (pooled from overall totals)</h2>
+      <table class="dataframe data-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>condition</th>
+      <th>compliance_when_correct</th>
+      <th>override_when_incorrect</th>
+      <th>memory_accuracy</th>
+      <th>pre_error_compliance_pooled</th>
+      <th>post_error_compliance_pooled</th>
+      <th>trust_decay_pooled</th>
+      <th>avg_arm_time_s</th>
+      <th>avg_speaker_time_s</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Justification</td>
+      <td>0.681</td>
+      <td>0.044</td>
+      <td>0.875</td>
+      <td>0.886</td>
+      <td>0.762</td>
+      <td>0.124</td>
+      <td>4.613</td>
+      <td>3.968</td>
+    </tr>
+    <tr>
+      <td>No Justification</td>
+      <td>0.606</td>
+      <td>0.125</td>
+      <td>0.881</td>
+      <td>0.788</td>
+      <td>0.750</td>
+      <td>0.038</td>
+      <td>12.248</td>
+      <td>3.049</td>
+    </tr>
+  </tbody>
+</table>
+    </div>
+
+    <div class="section">
+      <h2>Participant demographics</h2>
+      <table class="dataframe data-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>id</th>
+      <th>gender</th>
+      <th>age</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>10</td>
+      <td>Female</td>
+      <td>22</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>Male</td>
+      <td>24</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>Male</td>
+      <td>23</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>Female</td>
+      <td>22</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>Male</td>
+      <td>30</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>Male</td>
+      <td>23</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>Female</td>
+      <td>23</td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>Male</td>
+      <td>22</td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>Male</td>
+      <td>23</td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>Male</td>
+      <td>22</td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>Male</td>
+      <td>22</td>
+    </tr>
+    <tr>
+      <td>21</td>
+      <td>Male</td>
+      <td>23</td>
+    </tr>
+    <tr>
+      <td>22</td>
+      <td>Male</td>
+      <td>27</td>
+    </tr>
+    <tr>
+      <td>23</td>
+      <td>Female</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Male</td>
+      <td>24</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Female</td>
+      <td>23</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Male</td>
+      <td>21</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>Male</td>
+      <td>27</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>Male</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>Male</td>
+      <td>27</td>
+    </tr>
+  </tbody>
+</table>
+    </div>
+
+    <div class="section">
+      <h2>Participant x condition metrics</h2>
+      <table class="dataframe data-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>id</th>
+      <th>gender</th>
+      <th>age</th>
+      <th>condition</th>
+      <th>compliance_rate_when_correct</th>
+      <th>override_rate_when_incorrect</th>
+      <th>memory_test_accuracy</th>
+      <th>avg_time_arm</th>
+      <th>avg_time_speaker</th>
+      <th>compliance_rate_before_failure</th>
+      <th>compliance_rate_after_failure</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>10</td>
+      <td>Female</td>
+      <td>22</td>
+      <td>Justification</td>
+      <td>0.750</td>
+      <td>0.000</td>
+      <td>1.000</td>
+      <td>3.759</td>
+      <td>6.957</td>
+      <td>—</td>
+      <td>0.857</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>Female</td>
+      <td>22</td>
+      <td>No Justification</td>
+      <td>0.750</td>
+      <td>0.000</td>
+      <td>1.000</td>
+      <td>2.034</td>
+      <td>2.298</td>
+      <td>1.000</td>
+      <td>0.833</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>Male</td>
+      <td>24</td>
+      <td>Justification</td>
+      <td>0.750</td>
+      <td>0.125</td>
+      <td>1.000</td>
+      <td>2.646</td>
+      <td>3.416</td>
+      <td>1.000</td>
+      <td>0.800</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>Male</td>
+      <td>24</td>
+      <td>No Justification</td>
+      <td>0.750</td>
+      <td>0.125</td>
+      <td>1.000</td>
+      <td>7.654</td>
+      <td>2.288</td>
+      <td>1.000</td>
+      <td>1.000</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>Male</td>
+      <td>23</td>
+      <td>Justification</td>
+      <td>0.625</td>
+      <td>0.000</td>
+      <td>1.000</td>
+      <td>3.717</td>
+      <td>3.407</td>
+      <td>—</td>
+      <td>0.714</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>Male</td>
+      <td>23</td>
+      <td>No Justification</td>
+      <td>0.500</td>
+      <td>0.000</td>
+      <td>1.000</td>
+      <td>29.085</td>
+      <td>1.677</td>
+      <td>0.500</td>
+      <td>0.600</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>Female</td>
+      <td>22</td>
+      <td>Justification</td>
+      <td>0.750</td>
+      <td>0.000</td>
+      <td>1.000</td>
+      <td>2.250</td>
+      <td>7.950</td>
+      <td>—</td>
+      <td>0.857</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>Female</td>
+      <td>22</td>
+      <td>No Justification</td>
+      <td>0.625</td>
+      <td>0.125</td>
+      <td>1.000</td>
+      <td>3.211</td>
+      <td>3.095</td>
+      <td>0.800</td>
+      <td>0.500</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>Male</td>
+      <td>30</td>
+      <td>Justification</td>
+      <td>0.625</td>
+      <td>0.000</td>
+      <td>1.000</td>
+      <td>2.355</td>
+      <td>1.823</td>
+      <td>1.000</td>
+      <td>0.667</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>Male</td>
+      <td>30</td>
+      <td>No Justification</td>
+      <td>0.625</td>
+      <td>0.250</td>
+      <td>1.000</td>
+      <td>4.247</td>
+      <td>2.697</td>
+      <td>1.000</td>
+      <td>0.833</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>Male</td>
+      <td>23</td>
+      <td>Justification</td>
+      <td>0.625</td>
+      <td>0.250</td>
+      <td>1.000</td>
+      <td>3.323</td>
+      <td>2.978</td>
+      <td>0.800</td>
+      <td>1.000</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>Male</td>
+      <td>23</td>
+      <td>No Justification</td>
+      <td>0.625</td>
+      <td>0.250</td>
+      <td>1.000</td>
+      <td>2.845</td>
+      <td>3.272</td>
+      <td>0.800</td>
+      <td>1.000</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>Female</td>
+      <td>23</td>
+      <td>Justification</td>
+      <td>0.625</td>
+      <td>0.125</td>
+      <td>1.000</td>
+      <td>2.008</td>
+      <td>5.239</td>
+      <td>1.000</td>
+      <td>0.800</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>Female</td>
+      <td>23</td>
+      <td>No Justification</td>
+      <td>0.500</td>
+      <td>0.125</td>
+      <td>1.000</td>
+      <td>12.444</td>
+      <td>1.865</td>
+      <td>0.667</td>
+      <td>0.500</td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>Male</td>
+      <td>22</td>
+      <td>Justification</td>
+      <td>0.625</td>
+      <td>0.125</td>
+      <td>0.875</td>
+      <td>8.506</td>
+      <td>9.968</td>
+      <td>—</td>
+      <td>0.714</td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>Male</td>
+      <td>22</td>
+      <td>No Justification</td>
+      <td>0.750</td>
+      <td>0.125</td>
+      <td>1.000</td>
+      <td>25.272</td>
+      <td>2.462</td>
+      <td>1.000</td>
+      <td>1.000</td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>Male</td>
+      <td>23</td>
+      <td>Justification</td>
+      <td>0.750</td>
+      <td>0.000</td>
+      <td>0.875</td>
+      <td>1.418</td>
+      <td>2.811</td>
+      <td>1.000</td>
+      <td>0.750</td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>Male</td>
+      <td>23</td>
+      <td>No Justification</td>
+      <td>0.750</td>
+      <td>0.000</td>
+      <td>1.000</td>
+      <td>53.178</td>
+      <td>1.055</td>
+      <td>1.000</td>
+      <td>0.667</td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>Male</td>
+      <td>22</td>
+      <td>Justification</td>
+      <td>0.625</td>
+      <td>0.000</td>
+      <td>1.000</td>
+      <td>2.677</td>
+      <td>1.856</td>
+      <td>1.000</td>
+      <td>0.600</td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>Male</td>
+      <td>22</td>
+      <td>No Justification</td>
+      <td>0.500</td>
+      <td>0.250</td>
+      <td>1.000</td>
+      <td>3.443</td>
+      <td>3.626</td>
+      <td>0.000</td>
+      <td>0.833</td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>Male</td>
+      <td>22</td>
+      <td>Justification</td>
+      <td>0.750</td>
+      <td>0.000</td>
+      <td>1.000</td>
+      <td>0.759</td>
+      <td>2.365</td>
+      <td>—</td>
+      <td>0.857</td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>Male</td>
+      <td>22</td>
+      <td>No Justification</td>
+      <td>0.750</td>
+      <td>0.000</td>
+      <td>1.000</td>
+      <td>37.052</td>
+      <td>1.426</td>
+      <td>1.000</td>
+      <td>0.667</td>
+    </tr>
+    <tr>
+      <td>21</td>
+      <td>Male</td>
+      <td>23</td>
+      <td>Justification</td>
+      <td>0.750</td>
+      <td>0.000</td>
+      <td>1.000</td>
+      <td>3.323</td>
+      <td>1.973</td>
+      <td>1.000</td>
+      <td>0.833</td>
+    </tr>
+    <tr>
+      <td>21</td>
+      <td>Male</td>
+      <td>23</td>
+      <td>No Justification</td>
+      <td>0.500</td>
+      <td>0.250</td>
+      <td>1.000</td>
+      <td>1.673</td>
+      <td>4.124</td>
+      <td>0.500</td>
+      <td>0.800</td>
+    </tr>
+    <tr>
+      <td>22</td>
+      <td>Male</td>
+      <td>27</td>
+      <td>Justification</td>
+      <td>0.750</td>
+      <td>0.000</td>
+      <td>1.000</td>
+      <td>1.677</td>
+      <td>1.532</td>
+      <td>1.000</td>
+      <td>0.833</td>
+    </tr>
+    <tr>
+      <td>22</td>
+      <td>Male</td>
+      <td>27</td>
+      <td>No Justification</td>
+      <td>0.750</td>
+      <td>0.000</td>
+      <td>1.000</td>
+      <td>11.649</td>
+      <td>1.179</td>
+      <td>—</td>
+      <td>0.857</td>
+    </tr>
+    <tr>
+      <td>23</td>
+      <td>Female</td>
+      <td>20</td>
+      <td>Justification</td>
+      <td>0.750</td>
+      <td>0.000</td>
+      <td>0.875</td>
+      <td>5.218</td>
+      <td>3.808</td>
+      <td>—</td>
+      <td>0.857</td>
+    </tr>
+    <tr>
+      <td>23</td>
+      <td>Female</td>
+      <td>20</td>
+      <td>No Justification</td>
+      <td>0.500</td>
+      <td>0.125</td>
+      <td>0.750</td>
+      <td>9.270</td>
+      <td>4.227</td>
+      <td>0.750</td>
+      <td>0.333</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Male</td>
+      <td>24</td>
+      <td>Justification</td>
+      <td>0.750</td>
+      <td>0.000</td>
+      <td>0.000</td>
+      <td>2.833</td>
+      <td>4.340</td>
+      <td>1.000</td>
+      <td>0.833</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Male</td>
+      <td>24</td>
+      <td>No Justification</td>
+      <td>0.375</td>
+      <td>0.125</td>
+      <td>0.000</td>
+      <td>6.270</td>
+      <td>8.439</td>
+      <td>1.000</td>
+      <td>0.500</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Female</td>
+      <td>23</td>
+      <td>Justification</td>
+      <td>0.750</td>
+      <td>0.000</td>
+      <td>0.000</td>
+      <td>2.600</td>
+      <td>1.851</td>
+      <td>1.000</td>
+      <td>0.800</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Female</td>
+      <td>23</td>
+      <td>No Justification</td>
+      <td>0.750</td>
+      <td>0.000</td>
+      <td>0.000</td>
+      <td>2.583</td>
+      <td>3.443</td>
+      <td>—</td>
+      <td>0.857</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Male</td>
+      <td>21</td>
+      <td>Justification</td>
+      <td>0.625</td>
+      <td>0.125</td>
+      <td>1.000</td>
+      <td>5.246</td>
+      <td>4.656</td>
+      <td>0.833</td>
+      <td>0.000</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Male</td>
+      <td>21</td>
+      <td>No Justification</td>
+      <td>0.375</td>
+      <td>0.250</td>
+      <td>1.000</td>
+      <td>7.079</td>
+      <td>7.891</td>
+      <td>0.333</td>
+      <td>0.750</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>Male</td>
+      <td>27</td>
+      <td>Justification</td>
+      <td>0.625</td>
+      <td>0.125</td>
+      <td>0.875</td>
+      <td>26.736</td>
+      <td>1.186</td>
+      <td>0.800</td>
+      <td>0.500</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>Male</td>
+      <td>27</td>
+      <td>No Justification</td>
+      <td>0.500</td>
+      <td>0.250</td>
+      <td>1.000</td>
+      <td>2.225</td>
+      <td>2.896</td>
+      <td>0.500</td>
+      <td>0.800</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>Male</td>
+      <td>50</td>
+      <td>Justification</td>
+      <td>0.750</td>
+      <td>0.000</td>
+      <td>1.000</td>
+      <td>6.691</td>
+      <td>7.643</td>
+      <td>1.000</td>
+      <td>0.800</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>Male</td>
+      <td>50</td>
+      <td>No Justification</td>
+      <td>0.750</td>
+      <td>0.125</td>
+      <td>1.000</td>
+      <td>12.346</td>
+      <td>1.131</td>
+      <td>1.000</td>
+      <td>0.833</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>Male</td>
+      <td>27</td>
+      <td>Justification</td>
+      <td>0.375</td>
+      <td>0.000</td>
+      <td>1.000</td>
+      <td>4.516</td>
+      <td>3.608</td>
+      <td>0.500</td>
+      <td>0.400</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>Male</td>
+      <td>27</td>
+      <td>No Justification</td>
+      <td>0.500</td>
+      <td>0.125</td>
+      <td>0.875</td>
+      <td>11.394</td>
+      <td>1.887</td>
+      <td>0.750</td>
+      <td>0.667</td>
+    </tr>
+  </tbody>
+</table>
+    </div>
+  </div>
+</body>
+</html>
